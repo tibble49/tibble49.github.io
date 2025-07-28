@@ -110,7 +110,7 @@ Case studies from **Spotify, IKEA, and DAZN** show that clearly defined boundari
 
 ## 📌 Visual Example
 
-![Micro frontend architecture: Shell to MFE](assets/images/shell-to-mfes.png)
+![Micro frontend architecture: Shell to MFE](/assets/images/shell-to-mfes.png)
 
 ---
 
