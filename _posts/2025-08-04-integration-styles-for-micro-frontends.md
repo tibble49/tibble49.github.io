@@ -1,3 +1,14 @@
+---
+title: "Integration Styles for Micro Frontends — Build-Time, Runtime, and Beyond"
+date: 2025-08-04
+categories: [frontend, architecture, software]
+tags: [integration-styles, micro-frontends, frontend, architecture, software, build-time, runtime, web-components]
+series: micro-frontends
+author: Lindsey Tibbitts
+author_profile: true
+excerpt: "Explore different ways to integrate micro frontends — from build-time bundling to runtime orchestration. Each approach has tradeoffs that affect deployment flexibility and team autonomy."
+---
+
 # 🔄 Integration Styles for Micro Frontends — Build-Time, Runtime, and Beyond
 
 > *Once you’ve defined your micro frontend architecture, the next challenge is figuring out how to stitch those pieces together. There’s no single “right” way — but each integration style comes with tradeoffs you’ll want to understand.*

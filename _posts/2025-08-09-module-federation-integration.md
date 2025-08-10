@@ -1,3 +1,14 @@
+---
+title: "Module Federation: Dynamic Integration for Micro Frontends"
+date: 2025-08-09
+categories: [frontend, architecture, software]
+tags: [module-federation, micro-frontends, frontend, architecture, software, webpack, vite]
+series: micro-frontends
+author: Lindsey Tibbitts
+author_profile: true
+excerpt: "Webpack Module Federation enables runtime loading of micro frontends without build-time bundling. Learn how to implement dynamic integration for truly independent deployment and scaling."
+---
+
 # ⚙️ Module Federation: Dynamic Integration for Micro Frontends
 
 > *If micro frontends are the architecture, Module Federation is the mechanism. This post dives into what Webpack Module Federation is, why it’s a game-changer for micro frontends, and how to use it without tying yourself in knots.*

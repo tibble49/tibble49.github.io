@@ -1,6 +1,17 @@
+---
+title: "The Building Blocks of Micro Frontend Architecture"
+date: 2025-07-31
+categories: [frontend, architecture, software]
+tags: [micro-frontends, frontend, architecture, software, container, bounded-contexts, team-structure]
+series: micro-frontends
+author: Lindsey Tibbitts
+author_profile: true
+excerpt: "Learn the core architectural components that make micro frontends work — from containers and bounded contexts to team organization and governance strategies."
+---
+
 # 🏗️ The Building Blocks of Micro Frontend Architecture
 
-> *Once you’ve decided to adopt micro frontends, the next question is: how do you structure them? This post dives into the core architectural elements that make MFEs work — and the decisions you’ll need to make along the way.*
+> *Once you've decided to adopt micro frontends, the next question is: how do you structure them? This post dives into the core architectural elements that make MFEs work — and the decisions you'll need to make along the way.*
 
 ---
 
