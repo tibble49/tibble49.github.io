@@ -1,6 +1,6 @@
 ---
 title: "Web Components: The Framework-Agnostic Path to Micro Frontends"
-date: 2025-08-12
+date: 2025-08-13
 categories: [frontend, architecture, software]
 tags: [web-components, micro-frontends, frontend, architecture, software, custom-elements, shadow-dom]
 series: micro-frontends
