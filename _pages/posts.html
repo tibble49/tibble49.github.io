@@ -1,0 +1,54 @@
+---
+title: "Blog"
+permalink: /posts/
+layout: single
+author_profile: true
+---
+
+<div class="posts-container">
+  {% for post in site.posts %}
+    <article class="post-item">
+      <h4 style="margin-top:0px"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+      <p class="post-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">
+          {{ post.date | date: "%B %d, %Y" }}
+        </time>
+        {% if post.series %}
+          <span class="post-series">Series: {{ post.series | replace: "-", " " | titleize }}</span>
+        {% endif %}
+      </p>
+      {% if post.excerpt %}
+        <p style="font-size:.85em">{{ post.excerpt }}</p>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+
+<style>
+.post-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+
+.post-meta {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.post-series {
+  display: inline-block;
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.2rem 0.5rem;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+</style> 
