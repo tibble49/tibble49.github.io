@@ -5,9 +5,22 @@ layout: single
 author_profile: true
 ---
 
+{% assign series_posts = site.posts | where_exp: "post", "post.series" %}
+{% assign series_names = series_posts | map: "series" | uniq | sort %}
+
+<div class="series-filter-container">
+  <h3 style="margin-top:0">Filter by Series:</h3>
+  <div class="series-buttons">
+    <button class="series-btn active" data-series="all">All Posts</button>
+    {% for series in series_names %}
+      <button class="series-btn" data-series="{{ series | slugify }}">{{ series | replace: "-", " " | titleize }}</button>
+    {% endfor %}
+  </div>
+</div>
+
 <div class="posts-container">
   {% for post in site.posts %}
-    <article class="post-item">
+    <article class="post-item" data-series="{{ post.series | slugify }}">
       <h4 style="margin-top:0px"><a href="{{ post.url }}">{{ post.title }}</a></h4>
       <p class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}">
@@ -25,12 +38,49 @@ author_profile: true
 </div>
 
 <style>
+.series-filter-container {
+  padding: 1rem;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.series-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.series-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid #bbdefb;
+  background: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.series-btn:hover {
+  background: #f3e5f5;
+}
+
+.series-btn.active {
+  background: #1976d2;
+  color: white;
+  border-color: #1976d2;
+}
+
 .post-item {
   margin-bottom: 2rem;
   padding: 1rem;
   border: 1px solid #eee;
   border-radius: 5px;
   transition: opacity 0.3s;
+}
+
+.post-item.hidden {
+  display: none;
 }
 
 .post-meta {
@@ -51,4 +101,32 @@ author_profile: true
   font-size: 0.8rem;
   font-weight: 500;
 }
-</style> 
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const seriesButtons = document.querySelectorAll('.series-btn');
+  const postItems = document.querySelectorAll('.post-item');
+
+  // Series filtering
+  seriesButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const selectedSeries = this.getAttribute('data-series');
+      
+      // Update active button
+      seriesButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter posts by series
+      postItems.forEach(post => {
+        const postSeries = post.getAttribute('data-series');
+        if (selectedSeries === 'all' || postSeries === selectedSeries) {
+          post.classList.remove('hidden');
+        } else {
+          post.classList.add('hidden');
+        }
+      });
+    });
+  });
+});
+</script> 
