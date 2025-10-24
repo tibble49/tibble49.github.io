@@ -9,8 +9,6 @@ author_profile: true
 excerpt: "Testing in micro frontends requires balancing autonomy and integration. Learn how to design a layered testing strategy that builds confidence without slowing teams down."
 ---
 
-# 🧪 Testing in Micro Frontends — Building Confidence Across Boundaries
-
 > *Testing in a distributed frontend architecture is as much about boundaries as it is about code. The goal isn’t to test everything everywhere — it’s to test the right things, in the right place.*
 
 ---
