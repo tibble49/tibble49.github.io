@@ -1,6 +1,6 @@
 ---
 title: "The Human Side of Micro Frontends — Structure, Trust, and Shared Ownership"
-date: 2025-08-30
+date: 2025-10-26
 categories: [frontend, architecture, software]
 tags: [micro-frontends, architecture, governance, culture, leadership, teams]
 series: micro-frontends
