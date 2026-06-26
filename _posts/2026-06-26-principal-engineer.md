@@ -2,14 +2,13 @@
 title: "What Does a Principal Engineer Actually Do?"
 date: 2026-06-26
 categories: [architecture, software]
-tags: []
+tags: [principal-engineer, architecture, software, leadership, decision-making, governance, team-structure]
 series:
 author: Lindsey Tibbitts
 author_profile: true
 excerpt: "What does a principal engineer actually do? This post breaks down the real work: setting technical direction, reducing cross-team risk, and scaling impact through influence, judgment, and written artifacts."
 ---
 
-# What Does a Principal Engineer Actually Do?
 
 It depends. That's the honest answer, and it's also the thing nobody tells you when you're working toward the role.
 
@@ -17,7 +16,7 @@ I'm a Software Architect at my company — a title that, depending on who you as
 
 I want to try to explain what that actually means in practice — what the job is, how it varies, and why the variation isn't a bug.
 
----
+
 
 ## The job isn't what you think it is
 
@@ -29,7 +28,7 @@ This is disorienting at first. You keep looking for the commit. The commit isn't
 
 The job, at its core, is to multiply other engineers. Your code is the least important thing you write. The most important things you write are the documents, decision records, design reviews, and standards that encode judgment so other people don't have to re-derive it from scratch.
 
----
+
 
 ## The scope problem
 
@@ -45,7 +44,7 @@ This means principal work is almost always one of a few flavors:
 
 **Organizational translation.** Taking technical complexity and making it legible to leadership, and taking strategic ambiguity and making it actionable for engineers. This is underrated work. It's also exhausting.
 
----
+
 
 ## How the role looks different depending on where you sit
 
@@ -59,7 +58,6 @@ With other teams, my interaction is more transactional — and that's not a crit
 
 The failure mode I try to avoid is being the same kind of principal engineer for every team regardless of what they actually need. Sometimes the most useful thing I can do is write a thorough design review. Sometimes the most useful thing is a fifteen-minute conversation. Sometimes it's staying out of it entirely and trusting the team.
 
----
 
 ## The bottleneck trap
 
@@ -73,7 +71,6 @@ The way out isn't to stop being helpful. It's to change the form that help takes
 
 This is why writing matters so much at this level. Not because technical writing is inherently valuable, but because written judgment scales and spoken judgment doesn't.
 
----
 
 ## The things school didn't cover
 
@@ -87,7 +84,6 @@ Nobody prepares you for the soft edges of this role. A few things I've had to le
 
 **Judgment is the product.** At earlier levels, the product is code, or features, or systems. At this level, the product is judgment — knowing which problems are worth solving, which architectural decisions need more thought, which tradeoffs are acceptable. The hard part is that judgment is slow to build and hard to demonstrate. You mostly see it through its absence when it goes wrong.
 
----
 
 ## Why I like it
 
@@ -99,4 +95,3 @@ And there's something satisfying about the idea that the best version of this jo
 
 That's a strange thing to optimize for. But it's the right thing.
 
----
