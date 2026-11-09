@@ -95,6 +95,8 @@ FailedArchRuleException
     DataModule.ProductRepository
 ```
 
+Current versions word it slightly differently, but the parts are the same.
+
 Whoever reads it, a person or an agent, knows which rule broke, which type broke it, and what it reached for. Add a `Because` and the reason shows up in the message too.
 
 The same idea works on the front end. Here's a similar rule for a TypeScript web app, written for [dependency-cruiser](https://github.com/sverweij/dependency-cruiser), a dependency checker for JavaScript and TypeScript. UI components may not import the API client directly; they get data through hooks:
@@ -114,7 +116,7 @@ module.exports = {
 };
 ```
 
-Run it as part of the build, and a component that imports the API client fails the check. The `comment` plays the same role as `Because`: it tells whoever broke the rule why it exists.
+Run it as part of the build with `--output-type err-long`, and a component that imports the API client fails the check. The `comment` plays the same role as `Because`: it tells whoever broke the rule why it exists.
 
 These tools exist for most stacks, front end and back end. In .NET there's ArchUnitNET and [NetArchTest](https://github.com/BenMorris/NetArchTest). TypeScript and JavaScript have dependency-cruiser, [ArchUnitTS](https://github.com/LukasNiessen/ArchUnitTS) and [tsarch](https://www.angulararchitects.io/en/blog/architecture-beyond-layers-tsarch-for-ai-agents/). Python has [Import Linter](https://github.com/seddonym/import-linter) and [PyTestArch](https://github.com/zyskarch/pytestarch), and Kotlin has [Konsist](https://github.com/LemonAppDev/konsist). The syntax differs. The idea is the same everywhere.
 
