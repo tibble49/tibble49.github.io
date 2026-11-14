@@ -11,7 +11,10 @@
       diagram.textContent = block.textContent;
       container.replaceWith(diagram);
     });
-    mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+    // Match the site skin: use Mermaid's dark theme when the page background is dark.
+    const [r, g, b] = getComputedStyle(document.body).backgroundColor.match(/\d+/g).map(Number);
+    const isDark = (0.299 * r + 0.587 * g + 0.114 * b) < 128;
+    mermaid.initialize({ startOnLoad: false, theme: isDark ? "dark" : "neutral" });
     await mermaid.run({ querySelector: "pre.mermaid" });
   }
 </script>

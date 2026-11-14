@@ -1,12 +1,12 @@
 ---
 title: "Context Is the Lever, Workflows Are the Product: What Week 1 of Mega.Dev Changed for Me"
 date: 2026-11-11
-categories:
-  - blog
-tags:
-  - Mega.Dev
-  - AI
-  - architecture
+categories: [architecture, software, ai]
+tags: [mega-dev, ai, agents, architecture, context-engineering]
+series: mega-dev
+author: Lindsey Tibbitts
+author_profile: true
+excerpt: "Week 1 of the Mega.Dev course gave me a working model of how AI agents behave, what to measure, and where the deterministic boundaries need to be."
 ---
 
 I'm a software architect. Most of my work is reviewing specs and architecture decision records (ADRs), advising teams on platform decisions, and thinking about how large systems hold together over time. I didn't start the Mega.Dev course with specific expectations. AI is moving so fast that it's hard to keep up piecemeal, and I wanted a more structured look at where things stand today. Week 1 delivered that, and something more useful too: a working model of how these systems behave, and of where the deterministic boundaries need to be.
