@@ -68,7 +68,6 @@ The principle the course keeps coming back to is to hack away the unessential. S
 
 - Add a non-determinism and evaluation requirement to architecture reviews of agentic features.
 - Measure cost per completed task for two models on one real spec review.
-- Pilot a background dependency-review workflow on a single repository, with existing CI pipeline gates kept as the deterministic layer.
 - Write down the irreversible actions an agent may never take without human approval.
 
 I haven't tested any of this yet. Several of the course's figures are illustrative, and I expect some of its examples won't map cleanly to every team's tooling. For me, the value of Week 1 wasn't a set of tools. It was a clearer sense of what to be skeptical about, what to measure, and where the deterministic boundaries belong. I'll share what I learn in a later post once the first experiment has run.
