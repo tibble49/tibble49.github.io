@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Price per token vs. cost per task</title>
+  <desc id="d">Model A costs $0.50 per million tokens and Model B costs $2.00, so A looks four times cheaper. But A uses 220k tokens per task and B uses 40k, so A costs $0.11 per task and B costs $0.08.</desc>
+  <rect width="720" height="250" fill="#ffffff"/>
+
+  <!-- Left panel: price per million tokens (scale: $2.00 = 200px) -->
+  <text x="20" y="34" font-size="17" font-weight="600" fill="#313639">Price per million tokens</text>
+  <text x="20" y="80" font-size="14" fill="#494e52">Model A</text>
+  <rect x="90" y="64" width="50" height="24" fill="#c98a2b"/>
+  <text x="148" y="81" font-size="14" fill="#313639">$0.50</text>
+  <text x="20" y="124" font-size="14" fill="#494e52">Model B</text>
+  <rect x="90" y="108" width="200" height="24" fill="#2f7f93"/>
+  <text x="298" y="125" font-size="14" fill="#313639">$2.00</text>
+  <text x="20" y="164" font-size="13" fill="#7a8288">A looks 4× cheaper.</text>
+
+  <line x1="360" y1="20" x2="360" y2="180" stroke="#d5dadd" stroke-width="1"/>
+
+  <!-- Right panel: cost per task (scale: $0.11 = 200px) -->
+  <text x="390" y="34" font-size="17" font-weight="600" fill="#313639">Cost per task</text>
+  <text x="390" y="80" font-size="14" fill="#494e52">Model A</text>
+  <rect x="460" y="64" width="200" height="24" fill="#c98a2b"/>
+  <text x="668" y="81" font-size="14" fill="#313639">$0.11</text>
+  <text x="390" y="124" font-size="14" fill="#494e52">Model B</text>
+  <rect x="460" y="108" width="145" height="24" fill="#2f7f93"/>
+  <text x="613" y="125" font-size="14" fill="#313639">$0.08</text>
+  <text x="390" y="164" font-size="13" fill="#7a8288">A uses 220k tokens per task; B uses 40k.</text>
+
+  <text x="20" y="222" font-size="13" fill="#7a8288">Illustrative numbers from the course, not real benchmarks.</text>
+</svg>
