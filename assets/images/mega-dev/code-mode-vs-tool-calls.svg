@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Direct tool calls vs. code mode in one course demo</title>
+  <desc id="d">In one demo task, direct tool calls used about 51,500 tokens and code mode about 2,100. Direct tool calls took about 20.5 seconds and code mode about 5.6. Direct tool calls were correct in 1 of 3 runs and code mode in 3 of 3. One test, not a benchmark.</desc>
+  <rect width="720" height="320" rx="8" fill="#2c3240"/>
+
+  <text x="20" y="34" font-size="17" font-weight="600" fill="#f2f3f3">One task, two ways to call tools</text>
+  <rect x="440" y="22" width="14" height="14" fill="#f0a24b"/>
+  <text x="460" y="34" font-size="13" fill="#c5cad2">Direct tool calls</text>
+  <rect x="590" y="22" width="14" height="14" fill="#00adb5"/>
+  <text x="610" y="34" font-size="13" fill="#c5cad2">Code mode</text>
+
+  <!-- Tokens (scale: 51.5k = 400px) -->
+  <text x="20" y="84" font-size="14" fill="#f2f3f3">Tokens</text>
+  <text x="20" y="102" font-size="12" fill="#9aa2ae">lower is better</text>
+  <rect x="170" y="68" width="400" height="20" fill="#f0a24b"/>
+  <text x="578" y="83" font-size="13" fill="#f2f3f3">~51,500</text>
+  <rect x="170" y="94" width="16" height="20" fill="#00adb5"/>
+  <text x="194" y="109" font-size="13" fill="#f2f3f3">~2,100</text>
+
+  <!-- Time (scale: 20.5s = 400px) -->
+  <text x="20" y="160" font-size="14" fill="#f2f3f3">Time</text>
+  <text x="20" y="178" font-size="12" fill="#9aa2ae">lower is better</text>
+  <rect x="170" y="144" width="400" height="20" fill="#f0a24b"/>
+  <text x="578" y="159" font-size="13" fill="#f2f3f3">~20.5 s</text>
+  <rect x="170" y="170" width="110" height="20" fill="#00adb5"/>
+  <text x="288" y="185" font-size="13" fill="#f2f3f3">~5.6 s</text>
+
+  <!-- Correct runs (scale: 3 of 3 = 400px) -->
+  <text x="20" y="236" font-size="14" fill="#f2f3f3">Correct runs</text>
+  <text x="20" y="254" font-size="12" fill="#9aa2ae">higher is better</text>
+  <rect x="170" y="220" width="133" height="20" fill="#f0a24b"/>
+  <text x="311" y="235" font-size="13" fill="#f2f3f3">1 of 3</text>
+  <rect x="170" y="246" width="400" height="20" fill="#00adb5"/>
+  <text x="578" y="261" font-size="13" fill="#f2f3f3">3 of 3</text>
+
+  <text x="20" y="300" font-size="13" fill="#9aa2ae">One demo task, rounded. Try both approaches on your own workload before choosing.</text>
+</svg>
