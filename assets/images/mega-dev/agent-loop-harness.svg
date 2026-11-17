@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 350" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">The agent loop inside a production harness</title>
+  <desc id="d">On the left, the agent loop: a model call returns tool calls, the harness runs them, the results go back into the context, and the model is called again. When the model returns no tool calls, the loop ends with a final answer. On the right, the other things a production harness has to own: provider adapters, sessions, persistence, configuration, context management with a stable cached prefix, and approvals that can pause a run for days and resume it.</desc>
+  <defs>
+    <marker id="arw" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c5cad2"/>
+    </marker>
+  </defs>
+  <rect width="720" height="350" rx="8" fill="#2c3240"/>
+
+  <!-- Left: the loop -->
+  <text x="40" y="38" font-size="17" font-weight="600" fill="#f2f3f3">The agent loop</text>
+  <text x="40" y="60" font-size="13" fill="#9aa2ae">A few lines of code.</text>
+
+  <rect x="40" y="90" width="150" height="46" rx="6" fill="#00adb5"/>
+  <text x="115" y="118" font-size="14" font-weight="600" fill="#1d222b" text-anchor="middle">Model call</text>
+
+  <rect x="260" y="90" width="150" height="46" rx="6" fill="#3a4152" stroke="#00adb5"/>
+  <text x="335" y="118" font-size="14" fill="#f2f3f3" text-anchor="middle">Run the tools</text>
+
+  <rect x="150" y="185" width="150" height="46" rx="6" fill="#3a4152" stroke="#00adb5"/>
+  <text x="225" y="205" font-size="13" fill="#f2f3f3" text-anchor="middle">Add tool results</text>
+  <text x="225" y="222" font-size="13" fill="#f2f3f3" text-anchor="middle">to the context</text>
+
+  <line x1="190" y1="113" x2="257" y2="113" stroke="#c5cad2" stroke-width="1.5" marker-end="url(#arw)"/>
+  <text x="224" y="104" font-size="12" fill="#c5cad2" text-anchor="middle">tool calls</text>
+  <line x1="320" y1="136" x2="280" y2="182" stroke="#c5cad2" stroke-width="1.5" marker-end="url(#arw)"/>
+  <line x1="172" y1="185" x2="140" y2="139" stroke="#c5cad2" stroke-width="1.5" marker-end="url(#arw)"/>
+
+  <line x1="70" y1="136" x2="70" y2="272" stroke="#c5cad2" stroke-width="1.5" marker-end="url(#arw)"/>
+  <text x="62" y="200" font-size="12" fill="#c5cad2" text-anchor="end">no tool</text>
+  <text x="62" y="215" font-size="12" fill="#c5cad2" text-anchor="end">calls</text>
+  <rect x="40" y="275" width="150" height="40" rx="6" fill="#3a4152" stroke="#9aa2ae"/>
+  <text x="115" y="300" font-size="14" fill="#f2f3f3" text-anchor="middle">Final answer</text>
+
+  <line x1="440" y1="20" x2="440" y2="330" stroke="#4a5262" stroke-width="1"/>
+
+  <!-- Right: what the harness also owns -->
+  <text x="465" y="38" font-size="17" font-weight="600" fill="#f2f3f3">What production adds</text>
+  <text x="465" y="60" font-size="13" fill="#9aa2ae">Most of the real work.</text>
+
+  <g font-size="13" fill="#f2f3f3">
+    <rect x="465" y="80" width="230" height="32" rx="5" fill="#3a4152"/>
+    <text x="478" y="101">Provider adapters</text>
+    <rect x="465" y="118" width="230" height="32" rx="5" fill="#3a4152"/>
+    <text x="478" y="139">Sessions</text>
+    <rect x="465" y="156" width="230" height="32" rx="5" fill="#3a4152"/>
+    <text x="478" y="177">Persistence</text>
+    <rect x="465" y="194" width="230" height="32" rx="5" fill="#3a4152"/>
+    <text x="478" y="215">Configuration</text>
+    <rect x="465" y="232" width="230" height="38" rx="5" fill="#3a4152"/>
+    <text x="478" y="248">Context management</text>
+    <text x="478" y="263" font-size="11" fill="#c5cad2">keep the cached prefix stable</text>
+    <rect x="465" y="276" width="230" height="38" rx="5" fill="#f0a24b"/>
+    <text x="478" y="292" fill="#1d222b" font-weight="600">Approvals</text>
+    <text x="478" y="307" font-size="11" fill="#1d222b">pause for days, then resume the run</text>
+  </g>
+</svg>
