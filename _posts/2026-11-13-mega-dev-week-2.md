@@ -56,7 +56,7 @@ flowchart LR
     G --> S2["Shared MCP servers"]
 ```
 
-The course also compared two ways of using tools. In code mode, the model writes one short program that calls the tools, instead of calling each tool directly and reading every result. In the demo, the task was to search well over a thousand product combinations and return the three cheapest. Code mode used a small fraction of the tokens, finished in about a quarter of the time, and got the right answer in every run.
+The course also compared two ways for a model to use tools. With **direct tool calls**, the model calls each tool one at a time and reads every result back into its context. With **code mode**, the model writes one short program that calls the tools, and only the program's final output comes back. In the demo, the task was to search well over a thousand product combinations and return the three cheapest. Compared with direct tool calls, code mode used a small fraction of the tokens, finished in about a quarter of the time, and got the right answer in every run.
 
 ![In one demo task, direct tool calls used about 51,500 tokens, took about 20.5 seconds, and were correct in 1 of 3 runs. Code mode used about 2,100 tokens, took about 5.6 seconds, and was correct in 3 of 3.]({{ '/assets/images/mega-dev/code-mode-vs-tool-calls.svg' | relative_url }})
 
