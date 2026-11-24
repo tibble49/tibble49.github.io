@@ -7,7 +7,7 @@ author_profile: true
 
 ## Hi, I'm Lindsey Tibbitts
 
-I'm an Associate Software Architect in the transportation industry, passionate about building systems that work for both users and developers. With over 14 years in software development, I've evolved from full-stack developer to team lead to architect, always keeping my hands in the code while helping teams work more effectively.
+I'm a Software Architect in the transportation industry, passionate about building systems that work for both users and developers. With over 15 years in software development, I've evolved from full-stack developer to team lead to architect, always keeping my hands in the code while helping teams work more effectively.
 
 ## What I Do
 
@@ -27,7 +27,7 @@ I work at the intersection of technology and human collaboration, helping teams 
 
 ### Career Journey
 Since 2010, I've worked across the full spectrum of software development:
-- **Full-stack Developer** → **Team Lead** → **Associate Software Architect**
+- **Full-stack Developer** → **Team Lead** → **Software Architect**
 - **Industries**: Startups, government, and enterprise environments
 - **Focus**: Front-end architectures while maintaining full-stack capabilities
 
