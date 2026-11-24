@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Scoring an agent with pass^k</title>
+  <desc id="d">Left: a case that passes, passes, then fails across three runs. Counted as passing if any run succeeds, it passes. Counted with pass^3, which needs every run to succeed, it fails. Right: the broken-zipper exchange case failed all three runs before the fix and passed all three after.</desc>
+  <defs>
+    <g id="ok"><rect width="44" height="44" rx="6" fill="#00adb5"/><path d="M12,23 L19,30 L32,15" stroke="#1d222b" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+    <g id="no"><rect width="44" height="44" rx="6" fill="#f0a24b"/><path d="M14,14 L30,30 M30,14 L14,30" stroke="#1d222b" stroke-width="4" stroke-linecap="round"/></g>
+  </defs>
+  <rect width="720" height="270" rx="8" fill="#2c3240"/>
+
+  <!-- Left panel -->
+  <text x="20" y="34" font-size="17" font-weight="600" fill="#f2f3f3">Any run vs. every run</text>
+  <text x="20" y="58" font-size="13" fill="#9aa2ae">One case, three runs</text>
+  <use href="#ok" x="20" y="74"/>
+  <use href="#ok" x="74" y="74"/>
+  <use href="#no" x="128" y="74"/>
+  <text x="20" y="152" font-size="14" fill="#c5cad2">Passes if any run succeeds</text>
+  <text x="250" y="152" font-size="14" font-weight="600" fill="#00adb5">pass</text>
+  <text x="20" y="180" font-size="14" fill="#c5cad2">pass^3: every run succeeds</text>
+  <text x="250" y="180" font-size="14" font-weight="600" fill="#f0a24b">fail</text>
+  <text x="20" y="214" font-size="13" fill="#9aa2ae">One good run can hide an</text>
+  <text x="20" y="231" font-size="13" fill="#9aa2ae">intermittent failure.</text>
+
+  <line x1="360" y1="20" x2="360" y2="250" stroke="#4a5262" stroke-width="1"/>
+
+  <!-- Right panel -->
+  <text x="390" y="34" font-size="17" font-weight="600" fill="#f2f3f3">Broken-zipper exchange case</text>
+  <text x="390" y="58" font-size="13" fill="#9aa2ae">Tool reused an earlier proposal, skipping quality review</text>
+  <text x="390" y="102" font-size="14" fill="#c5cad2">Before fix</text>
+  <use href="#no" x="480" y="78"/>
+  <use href="#no" x="534" y="78"/>
+  <use href="#no" x="588" y="78"/>
+  <text x="390" y="160" font-size="14" fill="#c5cad2">After fix</text>
+  <use href="#ok" x="480" y="136"/>
+  <use href="#ok" x="534" y="136"/>
+  <use href="#ok" x="588" y="136"/>
+  <text x="390" y="214" font-size="13" fill="#9aa2ae">Start with 10 to 20 well-chosen cases</text>
+  <text x="390" y="231" font-size="13" fill="#9aa2ae">and deterministic graders.</text>
+</svg>
