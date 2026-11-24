@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-labelledby="t d" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="t">Evidence matched to risk</title>
+  <desc id="d">Three levels of change. Composes existing parts: a few deterministic checks. Extends or changes existing behavior: add tests and a separate reviewer. One-way door, such as a public API, a destructive migration or money movement: add human approval. Each level includes the evidence of the level before it, and evidence comes from the real build.</desc>
+  <rect width="720" height="300" rx="8" fill="#2c3240"/>
+  <text x="20" y="34" font-size="17" font-weight="600" fill="#f2f3f3">Evidence matched to risk</text>
+  <text x="20" y="58" font-size="13" fill="#9aa2ae">Each level adds to the one before it</text>
+
+  <!-- Level 1 -->
+  <rect x="20" y="78" width="216" height="150" rx="6" fill="#1d222b" stroke="#00adb5" stroke-width="2"/>
+  <text x="36" y="106" font-size="15" font-weight="600" fill="#00adb5">Composes</text>
+  <text x="36" y="130" font-size="13" fill="#c5cad2">Small fix built from</text>
+  <text x="36" y="148" font-size="13" fill="#c5cad2">existing parts</text>
+  <text x="36" y="184" font-size="13" font-weight="600" fill="#f2f3f3">+ a few deterministic</text>
+  <text x="36" y="202" font-size="13" font-weight="600" fill="#f2f3f3">checks</text>
+
+  <!-- Level 2 -->
+  <rect x="252" y="78" width="216" height="150" rx="6" fill="#1d222b" stroke="#7fb3d5" stroke-width="2"/>
+  <text x="268" y="106" font-size="15" font-weight="600" fill="#7fb3d5">Extends</text>
+  <text x="268" y="130" font-size="13" fill="#c5cad2">Changes existing</text>
+  <text x="268" y="148" font-size="13" fill="#c5cad2">behavior</text>
+  <text x="268" y="184" font-size="13" font-weight="600" fill="#f2f3f3">+ tests</text>
+  <text x="268" y="202" font-size="13" font-weight="600" fill="#f2f3f3">+ a separate reviewer</text>
+
+  <!-- Level 3 -->
+  <rect x="484" y="78" width="216" height="150" rx="6" fill="#1d222b" stroke="#f0a24b" stroke-width="2"/>
+  <text x="500" y="106" font-size="15" font-weight="600" fill="#f0a24b">One-way door</text>
+  <text x="500" y="130" font-size="13" fill="#c5cad2">Public API, destructive</text>
+  <text x="500" y="148" font-size="13" fill="#c5cad2">migration, money movement</text>
+  <text x="500" y="184" font-size="13" font-weight="600" fill="#f2f3f3">+ human approval</text>
+
+  <text x="20" y="262" font-size="13" fill="#9aa2ae">Evidence comes from the real build: screenshots, logs, measurements and test output,</text>
+  <text x="20" y="280" font-size="13" fill="#9aa2ae">not a summary the agent wrote about its own work.</text>
+</svg>
