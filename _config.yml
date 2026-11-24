@@ -58,7 +58,7 @@ plugins:
 author:
   name   : "Lindsey Tibbitts"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Associate Software Architect in transportation, passionate about building systems that work for both users and developers. 14+ years in software development with expertise in .NET, React, and DevSecOps."
+  bio    : "Software Architect in transportation, passionate about building systems that work for both users and developers. 15+ years in software development with expertise in .NET, React, and DevSecOps."
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
