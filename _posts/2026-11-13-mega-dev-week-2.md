@@ -88,14 +88,14 @@ She also said enterprise agent work needs finance, IT or developer experience, a
 
 On adoption, she described a small group of champions, around 1 percent of engineers, who added skills and agent instruction files to repositories. Once nearly everyone was using the tools, the team stopped tracking adoption and measured delivery instead. When agents picked up sprint tickets, teams completed roughly three times as much work. Delivery, not adoption, is the metric I'd want us to use.
 
-## What I plan to do next
+## What I'm taking into my day-to-day work
 
-1. Write 10 eval cases for one agent feature we own, with deterministic graders first, and record a pass^k baseline.
-2. Route that agent's model calls through a single traced path, after a data-handling review.
-3. Propose approval gates and resumable runs for any irreversible agent action.
-4. Audit the internal APIs an agent would call for false-success responses and undocumented multi-step flows.
-5. Draft a lean MCP tool proposal for one internal service.
+**If a rule matters, it can't live only in the prompt.** Telling an AI agent "never refund more than $100" is a suggestion. Writing that check into the system it uses is a rule. When I review a design that includes an agent, my first question is now which limits are enforced by code and which are just instructions the agent is asked to follow.
 
-None of this needs a new platform. It means treating agents as systems with contracts, limits, and measurements, which our architecture work already does. I'll share results once the first eval set has run.
+**An agent is only as trustworthy as the systems it talks to.** If a system reports "success" when something failed, a person might notice the problem later. An agent will carry on as if everything worked. So when a team proposes giving an agent access to one of our systems, I start with that system: does it report errors honestly, and are its steps written down clearly enough for someone who has never used it?
 
-*Course material referenced: the Mega.Dev course, Week 2 (lessons 1–5) and the Week 2 live Q&A. Figures are from course demos and are rounded. Opinions and plans are my own.*
+**One good demo isn't evidence.** AI agents can behave differently from one run to the next, so a single success proves very little. I now ask teams how many times they ran a scenario and how often it worked, and I treat "it worked when I tried it" the same way I'd treat untested code.
+
+None of this needs a new platform. It means treating agents like any other system, with clear contracts, enforced limits, and real measurements, which is what good architecture work already does.
+
+*Course material referenced: the Mega.Dev course, Week 2 (lessons 1–5) and the Week 2 live Q&A. Figures are from course demos and are rounded. Opinions are my own.*
